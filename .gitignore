@@ -1,0 +1,14 @@
+/build/
+/ibnetlens
+*.o
+/bench/.analogs/
+/bench/.work/
+__pycache__/
+/results/
+debian/ibnetlens/
+debian/.debhelper/
+debian/files
+debian/*.substvars
+debian/*.debhelper.log
+debian/debhelper-build-stamp
+/dist/

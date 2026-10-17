@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 504" role="img" aria-label="Parse and resolve links: time vs fabric size">
+<style>
+.bg{fill:#fff}.txt{fill:#24292f;font:12px system-ui,sans-serif}.title{fill:#24292f;font:600 14px system-ui,sans-serif}
+.axis{stroke:#57606a;fill:none}.grid{stroke:#d0d7de;stroke-width:1}.minor{stroke:#eaeef2;stroke-width:1}
+@media (prefers-color-scheme: dark){.bg{fill:#0d1117}.txt,.title{fill:#e6edf3}.axis{stroke:#8b949e}.grid{stroke:#30363d}.minor{stroke:#21262d}}
+</style>
+<rect class="bg" width="760" height="504"/>
+<text class="title" x="74" y="22">Parse and resolve links: time vs fabric size</text>
+<line class="minor" x1="123.8" y1="40" x2="123.8" y2="380"/>
+<line class="minor" x1="153.0" y1="40" x2="153.0" y2="380"/>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="189.7" y1="40" x2="189.7" y2="380"/>
+<line class="minor" x1="202.8" y1="40" x2="202.8" y2="380"/>
+<line class="minor" x1="213.9" y1="40" x2="213.9" y2="380"/>
+<line class="minor" x1="223.5" y1="40" x2="223.5" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="289.3" y1="40" x2="289.3" y2="380"/>
+<line class="minor" x1="318.5" y1="40" x2="318.5" y2="380"/>
+<line class="minor" x1="339.1" y1="40" x2="339.1" y2="380"/>
+<line class="minor" x1="355.2" y1="40" x2="355.2" y2="380"/>
+<line class="minor" x1="368.3" y1="40" x2="368.3" y2="380"/>
+<line class="minor" x1="379.4" y1="40" x2="379.4" y2="380"/>
+<line class="minor" x1="389.0" y1="40" x2="389.0" y2="380"/>
+<line class="minor" x1="397.4" y1="40" x2="397.4" y2="380"/>
+<line class="minor" x1="454.8" y1="40" x2="454.8" y2="380"/>
+<line class="minor" x1="484.0" y1="40" x2="484.0" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="520.7" y1="40" x2="520.7" y2="380"/>
+<line class="minor" x1="533.8" y1="40" x2="533.8" y2="380"/>
+<line class="minor" x1="544.9" y1="40" x2="544.9" y2="380"/>
+<line class="minor" x1="554.5" y1="40" x2="554.5" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="620.3" y1="40" x2="620.3" y2="380"/>
+<line class="minor" x1="649.5" y1="40" x2="649.5" y2="380"/>
+<line class="minor" x1="670.1" y1="40" x2="670.1" y2="380"/>
+<line class="minor" x1="686.2" y1="40" x2="686.2" y2="380"/>
+<line class="minor" x1="699.3" y1="40" x2="699.3" y2="380"/>
+<line class="minor" x1="710.4" y1="40" x2="710.4" y2="380"/>
+<line class="minor" x1="720.0" y1="40" x2="720.0" y2="380"/>
+<line class="minor" x1="728.4" y1="40" x2="728.4" y2="380"/>
+<line class="minor" x1="74" y1="359.5" x2="736" y2="359.5"/>
+<line class="minor" x1="74" y1="347.6" x2="736" y2="347.6"/>
+<line class="minor" x1="74" y1="339.1" x2="736" y2="339.1"/>
+<line class="minor" x1="74" y1="332.5" x2="736" y2="332.5"/>
+<line class="minor" x1="74" y1="327.1" x2="736" y2="327.1"/>
+<line class="minor" x1="74" y1="322.5" x2="736" y2="322.5"/>
+<line class="minor" x1="74" y1="318.6" x2="736" y2="318.6"/>
+<line class="minor" x1="74" y1="315.1" x2="736" y2="315.1"/>
+<line class="minor" x1="74" y1="291.5" x2="736" y2="291.5"/>
+<line class="minor" x1="74" y1="279.6" x2="736" y2="279.6"/>
+<line class="minor" x1="74" y1="271.1" x2="736" y2="271.1"/>
+<line class="minor" x1="74" y1="264.5" x2="736" y2="264.5"/>
+<line class="minor" x1="74" y1="259.1" x2="736" y2="259.1"/>
+<line class="minor" x1="74" y1="254.5" x2="736" y2="254.5"/>
+<line class="minor" x1="74" y1="250.6" x2="736" y2="250.6"/>
+<line class="minor" x1="74" y1="247.1" x2="736" y2="247.1"/>
+<line class="minor" x1="74" y1="223.5" x2="736" y2="223.5"/>
+<line class="minor" x1="74" y1="211.6" x2="736" y2="211.6"/>
+<line class="minor" x1="74" y1="203.1" x2="736" y2="203.1"/>
+<line class="minor" x1="74" y1="196.5" x2="736" y2="196.5"/>
+<line class="minor" x1="74" y1="191.1" x2="736" y2="191.1"/>
+<line class="minor" x1="74" y1="186.5" x2="736" y2="186.5"/>
+<line class="minor" x1="74" y1="182.6" x2="736" y2="182.6"/>
+<line class="minor" x1="74" y1="179.1" x2="736" y2="179.1"/>
+<line class="minor" x1="74" y1="155.5" x2="736" y2="155.5"/>
+<line class="minor" x1="74" y1="143.6" x2="736" y2="143.6"/>
+<line class="minor" x1="74" y1="135.1" x2="736" y2="135.1"/>
+<line class="minor" x1="74" y1="128.5" x2="736" y2="128.5"/>
+<line class="minor" x1="74" y1="123.1" x2="736" y2="123.1"/>
+<line class="minor" x1="74" y1="118.5" x2="736" y2="118.5"/>
+<line class="minor" x1="74" y1="114.6" x2="736" y2="114.6"/>
+<line class="minor" x1="74" y1="111.1" x2="736" y2="111.1"/>
+<line class="minor" x1="74" y1="87.5" x2="736" y2="87.5"/>
+<line class="minor" x1="74" y1="75.6" x2="736" y2="75.6"/>
+<line class="minor" x1="74" y1="67.1" x2="736" y2="67.1"/>
+<line class="minor" x1="74" y1="60.5" x2="736" y2="60.5"/>
+<line class="minor" x1="74" y1="55.1" x2="736" y2="55.1"/>
+<line class="minor" x1="74" y1="50.5" x2="736" y2="50.5"/>
+<line class="minor" x1="74" y1="46.6" x2="736" y2="46.6"/>
+<line class="minor" x1="74" y1="43.1" x2="736" y2="43.1"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="239.5" y1="40" x2="239.5" y2="380"/>
+<text class="txt" x="239.5" y="398" text-anchor="middle">1k</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10k</text>
+<line class="grid" x1="570.5" y1="40" x2="570.5" y2="380"/>
+<text class="txt" x="570.5" y="398" text-anchor="middle">100k</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">1M</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">100 µs</text>
+<line class="grid" x1="74" y1="312.0" x2="736" y2="312.0"/>
+<text class="txt" x="66" y="316.0" text-anchor="end">1 ms</text>
+<line class="grid" x1="74" y1="244.0" x2="736" y2="244.0"/>
+<text class="txt" x="66" y="248.0" text-anchor="end">10 ms</text>
+<line class="grid" x1="74" y1="176.0" x2="736" y2="176.0"/>
+<text class="txt" x="66" y="180.0" text-anchor="end">100 ms</text>
+<line class="grid" x1="74" y1="108.0" x2="736" y2="108.0"/>
+<text class="txt" x="66" y="112.0" text-anchor="end">1 s</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">10 s</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">nodes in the fabric</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">seconds (lower is better)</text>
+<polyline points="152.0,317.7 245.6,307.7 343.6,272.4 442.8,247.5 492.6,230.4 542.4,203.6 592.2,180.7" fill="none" stroke="#0a3d91" stroke-width="2"/>
+<rect x="148.0" y="313.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="241.6" y="303.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="339.6" y="268.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="438.8" y="243.5" width="8" height="8" fill="#0a3d91"/>
+<rect x="488.6" y="226.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="538.4" y="199.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="588.2" y="176.7" width="8" height="8" fill="#0a3d91"/>
+<polyline points="152.0,319.2 245.6,298.2 343.6,273.4 442.8,234.3 492.6,208.2 542.4,176.5 592.2,143.6" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="152.0" cy="319.2" r="4" fill="#1f6feb"/>
+<circle cx="245.6" cy="298.2" r="4" fill="#1f6feb"/>
+<circle cx="343.6" cy="273.4" r="4" fill="#1f6feb"/>
+<circle cx="442.8" cy="234.3" r="4" fill="#1f6feb"/>
+<circle cx="492.6" cy="208.2" r="4" fill="#1f6feb"/>
+<circle cx="542.4" cy="176.5" r="4" fill="#1f6feb"/>
+<circle cx="592.2" cy="143.6" r="4" fill="#1f6feb"/>
+<polyline points="152.0,229.6 245.6,220.5 343.6,200.0 442.8,167.0 492.6,147.0 542.4,127.5 592.2,107.9" fill="none" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="152.0,224.6 147.0,233.6 157.0,233.6" fill="#d9822b"/>
+<polygon points="245.6,215.5 240.6,224.5 250.6,224.5" fill="#d9822b"/>
+<polygon points="343.6,195.0 338.6,204.0 348.6,204.0" fill="#d9822b"/>
+<polygon points="442.8,162.0 437.8,171.0 447.8,171.0" fill="#d9822b"/>
+<polygon points="492.6,142.0 487.6,151.0 497.6,151.0" fill="#d9822b"/>
+<polygon points="542.4,122.5 537.4,131.5 547.4,131.5" fill="#d9822b"/>
+<polygon points="592.2,102.9 587.2,111.9 597.2,111.9" fill="#d9822b"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#0a3d91" stroke-width="2"/>
+<rect x="83.0" y="442.0" width="8" height="8" fill="#0a3d91"/>
+<text class="txt" x="108.0" y="450">ibnetlens, all cores</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="418.0" cy="446.0" r="4" fill="#1f6feb"/>
+<text class="txt" x="439.0" y="450">ibnetlens, 1 thread</text>
+<line x1="74.0" y1="464" x2="100.0" y2="464" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="87.0,459.0 82.0,468.0 92.0,468.0" fill="#d9822b"/>
+<text class="txt" x="108.0" y="468">Python regex parser</text>
+<text class="txt" x="74" y="496" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>

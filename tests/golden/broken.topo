@@ -1,0 +1,31 @@
+vendid=0x2c9
+devid=0xd2f0
+sysimgguid=0x0002c90300000100
+switchguid=0x0002c90300000100(0002c90300000100)
+Switch	4 "S-0002c90300000100"		# "sw-a" base port 0 lid 10 lmc 0
+[1]	"S-0002c90300000200"[1]		# "sw-b" lid 11 4xHDR
+[2]	"H-0002c90300001001"[1](2c90300001002) 		# "host1 HCA-1" lid 20 4xHDR
+[3]	"H-0002c90300009999"[1](2c90300009998) 		# "ghost HCA-1" lid 22 4xHDR
+[4]	"S-0002c90300000200"[7]		# "sw-b" lid 11 4xHDR
+
+vendid=0x2c9
+devid=0xd2f0
+sysimgguid=0x0002c90300000200
+switchguid=0x0002c90300000200(0002c90300000200)
+Switch	4 "S-0002c90300000200"		# "sw-b" base port 0 lid 10 lmc 0
+[1]	"S-0002c90300000100"[1]		# "sw-a" lid 10 4xFDR
+[2]	"S-0002c90300000100"[3]		# "sw-a" lid 10 4xHDR
+
+vendid=0x2c9
+devid=0x1017
+sysimgguid=0x0002c90300001000
+caguid=0x0002c90300001001
+Ca	1 "H-0002c90300001001"		# "host1 HCA-1"
+[1](2c90300001002) 	"S-0002c90300000100"[2]		# lid 20 lmc 0 "sw-a" lid 10 4xHDR
+
+vendid=0x2c9
+devid=0x1017
+sysimgguid=0x0002c90300001000
+caguid=0x0002c90300001001
+Ca	1 "H-0002c90300001001"		# "host1 HCA-1 duplicate"
+[1](2c90300001002) 	"S-0002c90300000100"[2]		# lid 20 lmc 0 "sw-a" lid 10 4xHDR

@@ -1,0 +1,146 @@
+{
+ "hosts_per_leaf": 32,
+ "spines": 32,
+ "scaling": [
+  {
+   "leaves": 8,
+   "nodes": 296,
+   "size_mb": 0.11,
+   "ibnetlens_j1_s": 0.0007836860604584217,
+   "ibnetlens_auto_s": 0.0008241399191319942,
+   "ibnetlens_j1_mb": 1.8046875,
+   "ibnetlens_auto_mb": 1.80859375,
+   "ibnetlens_slurm_s": 0.0007986349519342184,
+   "ibnetlens_check_s": 0.0007344859186559916,
+   "python_s": 0.016307655023410916,
+   "python_mb": 11.20703125,
+   "ibtopology_s": 0.06047876994125545,
+   "ibtopology_mb": 23.4375
+  },
+  {
+   "leaves": 32,
+   "nodes": 1088,
+   "size_mb": 0.42,
+   "ibnetlens_j1_s": 0.0015972389373928308,
+   "ibnetlens_auto_s": 0.0011559620033949614,
+   "ibnetlens_j1_mb": 2.0859375,
+   "ibnetlens_auto_mb": 2.1796875,
+   "ibnetlens_slurm_s": 0.0020797080360352993,
+   "ibnetlens_check_s": 0.002923696069046855,
+   "python_s": 0.02218873705714941,
+   "python_mb": 11.765625,
+   "ibtopology_s": 0.06664883997291327,
+   "ibtopology_mb": 24.3125
+  },
+  {
+   "leaves": 128,
+   "nodes": 4256,
+   "size_mb": 1.67,
+   "ibnetlens_j1_s": 0.003692244179546833,
+   "ibnetlens_auto_s": 0.003828398883342743,
+   "ibnetlens_j1_mb": 4.06640625,
+   "ibnetlens_auto_mb": 4.375,
+   "ibnetlens_slurm_s": 0.004065673099830747,
+   "ibnetlens_check_s": 0.004185246070846915,
+   "python_s": 0.04435850097797811,
+   "python_mb": 15.12109375,
+   "ibtopology_s": 0.1268123819027096,
+   "ibtopology_mb": 30.06640625
+  },
+  {
+   "leaves": 512,
+   "nodes": 16928,
+   "size_mb": 6.74,
+   "ibnetlens_j1_s": 0.013887230074033141,
+   "ibnetlens_auto_s": 0.0088805858977139,
+   "ibnetlens_j1_mb": 13.34375,
+   "ibnetlens_auto_mb": 15.33984375,
+   "ibnetlens_slurm_s": 0.012938638916239142,
+   "ibnetlens_check_s": 0.012607579119503498,
+   "python_s": 0.13572674011811614,
+   "python_mb": 27.890625,
+   "ibtopology_s": 0.34036054089665413,
+   "ibtopology_mb": 53.03515625
+  },
+  {
+   "leaves": 1024,
+   "nodes": 33824,
+   "size_mb": 13.54,
+   "ibnetlens_j1_s": 0.03364609181880951,
+   "ibnetlens_auto_s": 0.015852228039875627,
+   "ibnetlens_j1_mb": 25.5625,
+   "ibnetlens_auto_mb": 30.33984375,
+   "ibnetlens_slurm_s": 0.02735978993587196,
+   "ibnetlens_check_s": 0.019492778927087784,
+   "python_s": 0.26731600309722126,
+   "python_mb": 45.640625,
+   "ibtopology_s": 0.6496746949851513,
+   "ibtopology_mb": 84.8046875
+  },
+  {
+   "leaves": 2048,
+   "nodes": 67616,
+   "size_mb": 27.32,
+   "ibnetlens_j1_s": 0.09829067997634411,
+   "ibnetlens_auto_s": 0.03931891894899309,
+   "ibnetlens_j1_mb": 50.375,
+   "ibnetlens_auto_mb": 59.67578125,
+   "ibnetlens_slurm_s": 0.05275575793348253,
+   "ibnetlens_check_s": 0.049238093895837665,
+   "python_s": 0.5168789729941636,
+   "python_mb": 81.20703125,
+   "ibtopology_s": 1.2835320620797575,
+   "ibtopology_mb": 148.046875
+  },
+  {
+   "leaves": 4096,
+   "nodes": 135200,
+   "size_mb": 55.01,
+   "ibnetlens_j1_s": 0.2991552921012044,
+   "ibnetlens_auto_s": 0.0853357461746782,
+   "ibnetlens_j1_mb": 99.59375,
+   "ibnetlens_auto_mb": 119.97265625,
+   "ibnetlens_slurm_s": 0.10921716899611056,
+   "ibnetlens_check_s": 0.10780349187552929,
+   "python_s": 1.0040068610105664,
+   "python_mb": 152.6328125,
+   "ibtopology_s": 2.626032567117363,
+   "ibtopology_mb": 274.1953125
+  }
+ ],
+ "threads": [
+  {
+   "threads": 1,
+   "seconds": 0.3108160828705877
+  },
+  {
+   "threads": 2,
+   "seconds": 0.23503579595126212
+  },
+  {
+   "threads": 4,
+   "seconds": 0.21489041205495596
+  },
+  {
+   "threads": 8,
+   "seconds": 0.13725248607806861
+  },
+  {
+   "threads": 12,
+   "seconds": 0.11298813205212355
+  },
+  {
+   "threads": 16,
+   "seconds": 0.0895436960272491
+  },
+  {
+   "threads": 24,
+   "seconds": 0.07776639796793461
+  }
+ ],
+ "startup": {
+  "ibnetlens_s": 0.0006116400472819805,
+  "python_s": 0.016233982983976603
+ },
+ "analogs": true
+}

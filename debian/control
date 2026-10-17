@@ -1,0 +1,20 @@
+Source: ibnetlens
+Section: net
+Priority: optional
+Maintainer: Arthur Tumanyan <arthurtumanyan@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: ibnetlens
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: infiniband-diags
+Description: parse, validate and convert InfiniBand topology files
+ ibnetlens reads the topology files written by ibnetdiscover, and the net files
+ used by ibsim, and converts them to JSON, CSV, Graphviz or a Slurm tree
+ topology.conf. It can also check a fabric for inconsistencies (duplicate
+ GUIDs and LIDs, links without a matching reverse entry, mismatched or
+ degraded link speeds) and compare two snapshots.
+ .
+ Parsing is single pass and multi-threaded; a 54 MB dump takes about 30 ms.

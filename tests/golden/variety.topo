@@ -1,0 +1,44 @@
+#
+# Topology file: generated on Mon Jan  1 00:00:00 2024
+#
+# Initiated from node 0002c90300000001 port 0002c90300000002
+
+vendid=0x2c9
+devid=0xd2f0
+sysimgguid=0x0002c90300000100
+switchguid=0x0002c90300000100(0002c90300000100)
+Switch	8 "S-0002c90300000100"		# "core;sw-a:QM9700" enhanced port 0 lid 10 lmc 2
+[1]	"S-0002c90300000200"[1]		# "core;sw-b:QM9700" lid 11 4xNDR
+[2]	"S-0002c90300000200"[2]		# "core;sw-b:QM9700" lid 11 4xNDR
+[3]	"H-0002c90300001001"[1](2c90300001002) 		# "alpha1 mlx5_0" lid 20 4xHDR
+[4]	"H-0002c90300001003"[1](2c90300001004) 		# "alpha2 mlx5_0" lid 21 4xFDR10
+[5]	"R-0002c90300003001"[1]		# "gw1" lid 40 4xEDR
+
+vendid=0x2c9
+devid=0xd2f0
+sysimgguid=0x0002c90300000200
+switchguid=0x0002c90300000200(0002c90300000200)
+Switch	8 "S-0002c90300000200"		# "core;sw-b:QM9700" base port 0 lid 11 lmc 0
+[1]	"S-0002c90300000100"[1]		# "core;sw-a:QM9700" lid 10 4xNDR
+[2]	"S-0002c90300000100"[2]		# "core;sw-a:QM9700" lid 10 4xNDR
+
+vendid=0x2c9
+devid=0x1017
+sysimgguid=0x0002c90300001000
+caguid=0x0002c90300001001
+Ca	2 "H-0002c90300001001"		# "alpha1 mlx5_0"
+[1](2c90300001002) 	"S-0002c90300000100"[3]		# lid 20 lmc 0 "core;sw-a:QM9700" lid 10 4xHDR
+
+vendid=0x2c9
+devid=0x1017
+sysimgguid=0x0002c90300001000
+caguid=0x0002c90300001003
+Ca	2 "H-0002c90300001003"		# "alpha2 mlx5_0"
+[1](2c90300001004) 	"S-0002c90300000100"[4]		# lid 21 lmc 0 "core;sw-a:QM9700" lid 10 4xFDR10
+
+vendid=0x2c9
+devid=0x1000
+sysimgguid=0x0002c90300003000
+caguid=0x0002c90300003001
+Rt	1 "R-0002c90300003001"		# "gw1"
+[1](2c90300003002) 	"S-0002c90300000100"[5]		# lid 40 lmc 0 "core;sw-a:QM9700" lid 10 4xEDR

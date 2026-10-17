@@ -1,0 +1,72 @@
+.TH IBNETLENS 1 "2026" "ibnetlens 1.0.1" "User Commands"
+.SH NAME
+ibnetlens \- parse, validate and convert InfiniBand topology files
+.SH SYNOPSIS
+.B ibnetlens
+[\fBparse\fR] [\fB\-F\fR \fIformat\fR] [\fB\-o\fR \fIfile\fR] [\fB\-\-exclude\fR \fItext\fR] [\fB\-j\fR \fIN\fR] [\fB\-\-strict\fR] [\fB\-q\fR] [\fB\-\-progress\fR|\fB\-\-no\-progress\fR] [\fB\-\-stats\fR] \fIFILE\fR|\fB\-\fR
+.br
+.B ibnetlens check
+[\fB\-\-json\fR] [\fB\-\-strict\fR] [\fB\-q\fR] \fIFILE\fR|\fB\-\fR
+.br
+.B ibnetlens diff
+[\fB\-\-json\fR] [\fB\-q\fR] \fIOLD\fR \fINEW\fR
+.br
+.B ibnetlens info
+[\fB\-q\fR] \fIFILE\fR|\fB\-\fR
+.SH DESCRIPTION
+Reads the topology file written by
+.BR ibnetdiscover (8)
+(or standard input when the file is \fB\-\fR) and converts it, checks it for inconsistencies or compares it with a later snapshot.
+The free-form net files read by
+.BR ibsim (1)
+and the topology files written by NVIDIA ibdiagnet (with port labels in parentheses) are accepted as well.
+.SH COMMANDS
+.TP
+.B parse
+Convert the topology to another format. This is the default command.
+.TP
+.B check
+Report duplicate GUIDs and LIDs, links without a matching reverse entry, links whose peer reports a different remote port, mismatched or degraded link speeds, and links to nodes absent from the file.
+.TP
+.B diff
+List nodes and links added, removed or changed between two files.
+.TP
+.B info
+Print node, link and speed counts.
+.SH OPTIONS
+.TP
+.BR \-F ", " \-\-format " \fIformat\fR"
+One of json (default), csv (links), csv\-nodes, dot, slurm, ibnd, legacy.
+.TP
+.BR \-o ", " \-\-output " \fIfile\fR"
+Write to \fIfile\fR instead of standard output.
+.TP
+.BI \-\-exclude " text"
+With the slurm format, skip adapters whose description contains \fItext\fR.
+.TP
+.BR \-j ", " \-\-threads " \fIN\fR"
+Use \fIN\fR threads. By default the count is chosen from the input size and the number of CPUs.
+.TP
+.B \-\-strict
+Stop with status 2 on the first malformed line instead of warning and continuing.
+.TP
+.BR \-q ", " \-\-quiet
+Suppress parser warnings. Also hides the progress bar unless \fB\-\-progress\fR is given.
+.TP
+.B \-\-progress
+Show parse progress on standard error. By default progress is shown only when standard error is a terminal; a bar appears after a short delay and is erased when parsing ends. When forced on a non-terminal, one line is printed per 10%.
+.TP
+.B \-\-no\-progress
+Never show progress. Use this in scripts and cron jobs. The last of \fB\-\-progress\fR and \fB\-\-no\-progress\fR wins.
+.TP
+.B \-\-stats
+Print phase times, peak memory, thread count and node and port counts to standard error as one key=value line.
+.TP
+.B \-\-json
+Emit check or diff results as one JSON object per line.
+.SH SLURM OUTPUT
+A switch with at least as many hosts as links to other switches is a leaf and becomes a Nodes= line; every other switch lists the switches one level below it in Switches=. A spine that also serves hosts gets a synthetic leaf named after it with the suffix h. Host names are the first word of the adapter description.
+.SH EXIT STATUS
+0 on success, 1 when check or diff found something, 2 on usage or input errors.
+.SH SEE ALSO
+.BR ibnetdiscover (8)

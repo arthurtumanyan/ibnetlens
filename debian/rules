@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/ibnetlens PREFIX=/usr
+	$(MAKE) install-doc DESTDIR=$(CURDIR)/debian/ibnetlens PREFIX=/usr DOCDIR=/usr/share/doc/ibnetlens
+	rm -f debian/ibnetlens/usr/share/doc/ibnetlens/LICENSE
+
+override_dh_auto_test:
+	$(MAKE) test

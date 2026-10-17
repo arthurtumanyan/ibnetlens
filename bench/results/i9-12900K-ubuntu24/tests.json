@@ -1,0 +1,1085 @@
+{
+ "summary": {
+  "ok": 215,
+  "fail": 0,
+  "skip": 0
+ },
+ "seconds": 209.6,
+ "results": [
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-small legacy"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-small ibnd round trip"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-medium legacy"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-medium ibnd round trip"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "variety legacy"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "variety ibnd round trip"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-small threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-medium threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "variety threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "broken threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim.net threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "mixed-spine.net threaded parse"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded output"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim really used 7 threads"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded output"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim-messy really used 7 threads"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "duplicate node ID reported"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "mixed dump and ibsim net, threaded"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "broken threaded check"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "strict stops in threaded mode"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "strict diagnostics"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ft-medium slurm"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "variety slurm"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "spine with hosts slurm"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "broken check"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "variety check"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim dialect check"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim dialect slurm"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibsim dialect json"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "ibdiagnet extended format: links equal ft-medium"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "diff output"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "diff exit status"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "diff identical"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "check clean fabric"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "check degraded fabric"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "stdin input"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "strict accepts well-formed input"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "no progress output when stderr is not a terminal"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "--no-progress is silent"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "--progress reports completion"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "--stats line"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "last progress option wins"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "strict rejects malformed input"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "missing file"
+  },
+  {
+   "suite": "golden and behaviour",
+   "status": "ok",
+   "name": "unknown format"
+  },
+  {
+   "suite": "unit",
+   "status": "ok",
+   "name": "unit tests passed"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: real ibnetdiscover discovered 18 nodes in 0s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: switch and adapter counts match (real 6/12)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: port count matches iblinkinfo (40)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: real ibnetdiscover discovered 148 nodes in 0s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: switch and adapter counts match (real 20/128)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: port count matches iblinkinfo (384)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: real ibnetdiscover discovered 552 nodes in 0s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: switch and adapter counts match (real 40/512)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: port count matches iblinkinfo (1536)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: real ibnetdiscover discovered 16282 nodes in 4s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: switch and adapter counts match (real 282/16000)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: port count matches iblinkinfo (48000)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: real ibnetdiscover discovered 32350 nodes in 13s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: switch and adapter counts match (real 350/32000)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: port count matches iblinkinfo (114000)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 250x100x128: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: real ibnetdiscover discovered 60976 nodes in 40s"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: parses real ibnetdiscover output (strict)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: switch and adapter counts match (real 270/60706)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: port count matches iblinkinfo (129540)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: discovered links equal the simulated fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "fat-tree 254x16x239: check finds no problems in a healthy fabric"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "ibsim net file (plain): node GUIDs equal the ones ibsim assigns (33 nodes)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "ibsim net file (bases): node GUIDs equal the ones ibsim assigns (33 nodes)"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "diff: the real tool names the 4 removed hosts and ibnetlens reports 4 removed nodes"
+  },
+  {
+   "suite": "real ibnetdiscover",
+   "status": "ok",
+   "name": "diff: ibnetlens finds exactly the 4 removed hosts"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: ibdiagnet discovered 6 switches and 12 adapters"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: parses ibdiagnet's own topology file (strict)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: node counts match ibdiagnet (6/12)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: links in ibdiagnet's file equal the simulated fabric"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 4x2x3: check is clean on ibdiagnet's file"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: ibdiagnet discovered 20 switches and 128 adapters"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: parses ibdiagnet's own topology file (strict)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: node counts match ibdiagnet (20/128)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: links in ibdiagnet's file equal the simulated fabric"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 16x4x8: check is clean on ibdiagnet's file"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: ibdiagnet discovered 40 switches and 512 adapters"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: parses ibdiagnet's own topology file (strict)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: node counts match ibdiagnet (40/512)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: links in ibdiagnet's file equal the simulated fabric"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 32x8x16: check is clean on ibdiagnet's file"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: ibdiagnet discovered 282 switches and 16000 adapters"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: parses ibdiagnet's own topology file (strict)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: node counts match ibdiagnet (282/16000)"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: links in ibdiagnet's file equal the simulated fabric"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "fat-tree 250x32x64: check is clean on ibdiagnet's file"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "degraded link: check finds it in the topology file written by ibdiagnet"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "diff: ibtopodiff and ibnetlens diff both find 4 removed hosts"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "diff: both tools see identical files as equal"
+  },
+  {
+   "suite": "NVIDIA ibdiagnet and ibtopodiff",
+   "status": "ok",
+   "name": "ibnd writer: ibtopodiff reads ibnetlens's output and finds it identical to the original"
+  },
+  {
+   "suite": "real slurmctld",
+   "status": "ok",
+   "name": "slurmctld accepts ft-medium.topo (12 switches)"
+  },
+  {
+   "suite": "real slurmctld",
+   "status": "ok",
+   "name": "slurmctld accepts variety.topo (2 switches)"
+  },
+  {
+   "suite": "real slurmctld",
+   "status": "ok",
+   "name": "slurmctld accepts mixed-spine.net (5 switches)"
+  },
+  {
+   "suite": "real slurmctld",
+   "status": "ok",
+   "name": "slurmctld accepts ibsim.net (3 switches)"
+  },
+  {
+   "suite": "real slurmctld",
+   "status": "ok",
+   "name": "slurmctld rejects a switch that has both Switches= and Nodes="
+  },
+  {
+   "suite": "public sample dumps",
+   "status": "ok",
+   "name": "fattree-k4n3.topo"
+  },
+  {
+   "suite": "public sample dumps",
+   "status": "ok",
+   "name": "ibsim-net.2sw2path4hca.topo"
+  },
+  {
+   "suite": "public sample dumps",
+   "status": "ok",
+   "name": "loginoff-sx6036.topo"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-small legacy"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-small ibnd round trip"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-medium legacy"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-medium ibnd round trip"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "variety legacy"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "variety ibnd round trip"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-small threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-medium threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "variety threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "broken threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim.net threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "mixed-spine.net threaded parse"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded output"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim really used 7 threads"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded output"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy really used 7 threads"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "duplicate node ID reported"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "mixed dump and ibsim net, threaded"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "broken threaded check"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "strict stops in threaded mode"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "strict diagnostics"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ft-medium slurm"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "variety slurm"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "spine with hosts slurm"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "broken check"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "variety check"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect check"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect slurm"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect json"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "ibdiagnet extended format: links equal ft-medium"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "diff output"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "diff exit status"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "diff identical"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "check clean fabric"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "check degraded fabric"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "stdin input"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "strict accepts well-formed input"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "no progress output when stderr is not a terminal"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "--no-progress is silent"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "--progress reports completion"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "--stats line"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "last progress option wins"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "strict rejects malformed input"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "missing file"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "unknown format"
+  },
+  {
+   "suite": "AddressSanitizer",
+   "status": "ok",
+   "name": "unit tests passed"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-small legacy"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-small ibnd round trip"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-medium legacy"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-medium ibnd round trip"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "variety legacy"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "variety ibnd round trip"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-small threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-medium threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "variety threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "broken threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim.net threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "mixed-spine.net threaded parse"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded output"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim really used 7 threads"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded output"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy 64x8x16 threaded diagnostics"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim-messy really used 7 threads"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "duplicate node ID reported"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "mixed dump and ibsim net, threaded"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "broken threaded check"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "strict stops in threaded mode"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "strict diagnostics"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ft-medium slurm"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "variety slurm"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "spine with hosts slurm"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "broken check"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "variety check"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect check"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect slurm"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibsim dialect json"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "ibdiagnet extended format: links equal ft-medium"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "diff output"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "diff exit status"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "diff identical"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "check clean fabric"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "check degraded fabric"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "stdin input"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "strict accepts well-formed input"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "no progress output when stderr is not a terminal"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "--no-progress is silent"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "--progress reports completion"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "--stats line"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "last progress option wins"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "strict rejects malformed input"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "missing file"
+  },
+  {
+   "suite": "ThreadSanitizer",
+   "status": "ok",
+   "name": "unknown format"
+  }
+ ]
+}

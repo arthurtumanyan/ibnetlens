@@ -1,0 +1,9 @@
+error duplicate-guid H-0002c90300001001: GUID already used by 'host1 HCA-1'
+warning speed-mismatch S-0002c90300000100[1]: local 4xHDR, remote 4xFDR
+warning unknown-peer S-0002c90300000100[3]: remote node H-0002c90300009999 is not in the file
+error missing-reverse-link S-0002c90300000100[4]: remote port 7 of S-0002c90300000200 is not listed
+error asymmetric-link S-0002c90300000200[2]: remote port reports a different peer (H-0002c90300009999[1])
+warning degraded-link S-0002c90300000100[1]: link runs at 56 Gb/s, most links of this class run at 200 Gb/s
+error duplicate-lid S-0002c90300000200: LID 10 is also used by S-0002c90300000100
+error duplicate-lid H-0002c90300001001: LID 20 is also used by H-0002c90300001001
+4 nodes, 8 link entries: 5 errors, 3 warnings

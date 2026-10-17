@@ -1,0 +1,43 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cc: [gcc, clang]
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y ibsim-utils infiniband-diags slurmctld
+      - run: make CC=${{ matrix.cc }} CFLAGS="-O2 -Werror"
+      - run: make CC=${{ matrix.cc }} test
+      - run: python3 tests/selftest.py --tag ci-${{ matrix.cc }} --out results/ci-${{ matrix.cc }} --bench quick
+      - uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.cc }}
+          path: results/ci-${{ matrix.cc }}
+
+  sanitizers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make asan
+      - run: make tsan
+
+  packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: packaging/docker-test.sh ubuntu:24.04 fedora:latest
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages
+          path: build/containers
+
+  fuzz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y clang
+      - run: make fuzz FUZZ_SECONDS=120

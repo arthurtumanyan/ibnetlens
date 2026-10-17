@@ -1,0 +1,38 @@
+# two leaves, two spines; spine2 also serves one host directly
+Switch	8 "leaf1"
+[1]	"n1"
+[2]	"n2"
+[3]	"n3"
+[7]	"spine1"[1]
+[8]	"spine2"[1]
+
+Switch	8 "leaf2"
+[1]	"n4"
+[2]	"n5"
+[3]	"n6"
+[7]	"spine1"[2]
+[8]	"spine2"[2]
+
+Switch	8 "spine1"
+[1]	"leaf1"[7]
+[2]	"leaf2"[7]
+
+Switch	8 "spine2"
+[1]	"leaf1"[8]
+[2]	"leaf2"[8]
+[5]	"login"
+
+Hca	1 "n1"
+[1]	"leaf1"[1]
+Hca	1 "n2"
+[1]	"leaf1"[2]
+Hca	1 "n3"
+[1]	"leaf1"[3]
+Hca	1 "n4"
+[1]	"leaf2"[1]
+Hca	1 "n5"
+[1]	"leaf2"[2]
+Hca	1 "n6"
+[1]	"leaf2"[3]
+Hca	1 "login"
+[1]	"spine2"[5]

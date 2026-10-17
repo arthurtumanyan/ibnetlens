@@ -1,0 +1,693 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ibnetlens report</title><style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#24292f;--muted:#57606a;--line:#d0d7de;--ok:#1a7f37;--bad:#cf222e;--skip:#9a6700;--card:#f6f8fa}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--line:#30363d;--ok:#3fb950;--bad:#f85149;--skip:#d29922;--card:#161b22}}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;max-width:980px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:2rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border-bottom:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}.num{text-align:right;font-variant-numeric:tabular-nums}
+.ok{color:var(--ok);font-weight:600}.FAIL{color:var(--bad);font-weight:600}.skip{color:var(--skip);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0}
+svg{width:100%;height:auto;margin:8px 0}.muted{color:var(--muted)}
+.bg{display:none}.txt{fill:var(--fg);font:12px system-ui,sans-serif}.title{fill:var(--fg);font:600 14px system-ui,sans-serif}.axis{stroke:var(--muted);fill:none}.grid{stroke:var(--line)}.minor{stroke:var(--line);opacity:.5}</style></head><body><h1>ibnetlens test and benchmark report</h1>
+<table><tr><th></th><th>i9-12900K-ubuntu24</th></tr><tr><th>CPU</th><td>12th Gen Intel(R) Core(TM) i9-12900K</td></tr><tr><th>logical CPUs</th><td>24</td></tr><tr><th>memory MB</th><td>31795</td></tr><tr><th>system</th><td>Ubuntu 24.04.5 LTS</td></tr><tr><th>kernel</th><td>7.0.0-34-generic</td></tr><tr><th>arch</th><td>x86_64</td></tr><tr><th>compiler</th><td>cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0</td></tr><tr><th>ibnetlens</th><td>ibnetlens 1.0.1</td></tr><tr><th>SIMD hex parser</th><td>yes</td></tr><tr><th>GPU</th><td>Intel Corporation AlderLake-S GT1 (rev 0c)</td></tr><tr><th>python</th><td>3.12.3</td></tr><tr><th>date</th><td>2026-10-17 23:35</td></tr></table>
+<h2>Tests — i9-12900K-ubuntu24</h2>
+<div class="card"><span class="ok">215 passed</span> · <span class="FAIL">0 failed</span> · <span class="skip">0 skipped</span> <span class="muted">in 209.6 s</span></div>
+<details><summary>golden and behaviour <span class="muted">(47)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed-spine.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>duplicate node ID reported</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed dump and ibsim net, threaded</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict stops in threaded mode</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>spine with hosts slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect json</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibdiagnet extended format: links equal ft-medium</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff exit status</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff identical</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check clean fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check degraded fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>stdin input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict accepts well-formed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>no progress output when stderr is not a terminal</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--no-progress is silent</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--progress reports completion</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--stats line</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>last progress option wins</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict rejects malformed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>missing file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>unknown format</td></tr>
+</table></details>
+<details><summary>unit <span class="muted">(1)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>unit tests passed</td></tr>
+</table></details>
+<details><summary>real ibnetdiscover <span class="muted">(40)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: real ibnetdiscover discovered 18 nodes in 0s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: switch and adapter counts match (real 6/12)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: port count matches iblinkinfo (40)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: real ibnetdiscover discovered 148 nodes in 0s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: switch and adapter counts match (real 20/128)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: port count matches iblinkinfo (384)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: real ibnetdiscover discovered 552 nodes in 0s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: switch and adapter counts match (real 40/512)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: port count matches iblinkinfo (1536)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: real ibnetdiscover discovered 16282 nodes in 4s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: switch and adapter counts match (real 282/16000)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: port count matches iblinkinfo (48000)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: real ibnetdiscover discovered 32350 nodes in 13s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: switch and adapter counts match (real 350/32000)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: port count matches iblinkinfo (114000)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x100x128: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: real ibnetdiscover discovered 60976 nodes in 40s</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: parses real ibnetdiscover output (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: switch and adapter counts match (real 270/60706)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: port count matches iblinkinfo (129540)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: discovered links equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 254x16x239: check finds no problems in a healthy fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim net file (plain): node GUIDs equal the ones ibsim assigns (33 nodes)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim net file (bases): node GUIDs equal the ones ibsim assigns (33 nodes)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff: the real tool names the 4 removed hosts and ibnetlens reports 4 removed nodes</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff: ibnetlens finds exactly the 4 removed hosts</td></tr>
+</table></details>
+<details><summary>NVIDIA ibdiagnet and ibtopodiff <span class="muted">(24)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: ibdiagnet discovered 6 switches and 12 adapters</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: parses ibdiagnet&#x27;s own topology file (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: node counts match ibdiagnet (6/12)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: links in ibdiagnet&#x27;s file equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 4x2x3: check is clean on ibdiagnet&#x27;s file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: ibdiagnet discovered 20 switches and 128 adapters</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: parses ibdiagnet&#x27;s own topology file (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: node counts match ibdiagnet (20/128)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: links in ibdiagnet&#x27;s file equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 16x4x8: check is clean on ibdiagnet&#x27;s file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: ibdiagnet discovered 40 switches and 512 adapters</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: parses ibdiagnet&#x27;s own topology file (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: node counts match ibdiagnet (40/512)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: links in ibdiagnet&#x27;s file equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 32x8x16: check is clean on ibdiagnet&#x27;s file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: ibdiagnet discovered 282 switches and 16000 adapters</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: parses ibdiagnet&#x27;s own topology file (strict)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: node counts match ibdiagnet (282/16000)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: links in ibdiagnet&#x27;s file equal the simulated fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fat-tree 250x32x64: check is clean on ibdiagnet&#x27;s file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>degraded link: check finds it in the topology file written by ibdiagnet</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff: ibtopodiff and ibnetlens diff both find 4 removed hosts</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff: both tools see identical files as equal</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibnd writer: ibtopodiff reads ibnetlens&#x27;s output and finds it identical to the original</td></tr>
+</table></details>
+<details><summary>real slurmctld <span class="muted">(5)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>slurmctld accepts ft-medium.topo (12 switches)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>slurmctld accepts variety.topo (2 switches)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>slurmctld accepts mixed-spine.net (5 switches)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>slurmctld accepts ibsim.net (3 switches)</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>slurmctld rejects a switch that has both Switches= and Nodes=</td></tr>
+</table></details>
+<details><summary>public sample dumps <span class="muted">(3)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>fattree-k4n3.topo</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-net.2sw2path4hca.topo</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>loginoff-sx6036.topo</td></tr>
+</table></details>
+<details><summary>AddressSanitizer <span class="muted">(48)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed-spine.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>duplicate node ID reported</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed dump and ibsim net, threaded</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict stops in threaded mode</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>spine with hosts slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect json</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibdiagnet extended format: links equal ft-medium</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff exit status</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff identical</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check clean fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check degraded fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>stdin input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict accepts well-formed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>no progress output when stderr is not a terminal</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--no-progress is silent</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--progress reports completion</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--stats line</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>last progress option wins</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict rejects malformed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>missing file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>unknown format</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>unit tests passed</td></tr>
+</table></details>
+<details><summary>ThreadSanitizer <span class="muted">(47)</span></summary><table>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety legacy</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety ibnd round trip</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-small threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed-spine.net threaded parse</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy 64x8x16 threaded diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim-messy really used 7 threads</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>duplicate node ID reported</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>mixed dump and ibsim net, threaded</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken threaded check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict stops in threaded mode</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict diagnostics</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ft-medium slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>spine with hosts slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>broken check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>variety check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect check</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect slurm</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibsim dialect json</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>ibdiagnet extended format: links equal ft-medium</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff output</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff exit status</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>diff identical</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check clean fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>check degraded fabric</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>stdin input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict accepts well-formed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>no progress output when stderr is not a terminal</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--no-progress is silent</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--progress reports completion</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>--stats line</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>last progress option wins</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>strict rejects malformed input</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>missing file</td></tr>
+<tr><td class="ok" style="width:4.5em">ok</td><td>unknown format</td></tr>
+</table></details>
+<h2>Charts</h2>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 504" role="img" aria-label="Parse and resolve links: time vs fabric size">
+<text class="title" x="74" y="22">Parse and resolve links: time vs fabric size</text>
+<line class="minor" x1="123.8" y1="40" x2="123.8" y2="380"/>
+<line class="minor" x1="153.0" y1="40" x2="153.0" y2="380"/>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="189.7" y1="40" x2="189.7" y2="380"/>
+<line class="minor" x1="202.8" y1="40" x2="202.8" y2="380"/>
+<line class="minor" x1="213.9" y1="40" x2="213.9" y2="380"/>
+<line class="minor" x1="223.5" y1="40" x2="223.5" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="289.3" y1="40" x2="289.3" y2="380"/>
+<line class="minor" x1="318.5" y1="40" x2="318.5" y2="380"/>
+<line class="minor" x1="339.1" y1="40" x2="339.1" y2="380"/>
+<line class="minor" x1="355.2" y1="40" x2="355.2" y2="380"/>
+<line class="minor" x1="368.3" y1="40" x2="368.3" y2="380"/>
+<line class="minor" x1="379.4" y1="40" x2="379.4" y2="380"/>
+<line class="minor" x1="389.0" y1="40" x2="389.0" y2="380"/>
+<line class="minor" x1="397.4" y1="40" x2="397.4" y2="380"/>
+<line class="minor" x1="454.8" y1="40" x2="454.8" y2="380"/>
+<line class="minor" x1="484.0" y1="40" x2="484.0" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="520.7" y1="40" x2="520.7" y2="380"/>
+<line class="minor" x1="533.8" y1="40" x2="533.8" y2="380"/>
+<line class="minor" x1="544.9" y1="40" x2="544.9" y2="380"/>
+<line class="minor" x1="554.5" y1="40" x2="554.5" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="620.3" y1="40" x2="620.3" y2="380"/>
+<line class="minor" x1="649.5" y1="40" x2="649.5" y2="380"/>
+<line class="minor" x1="670.1" y1="40" x2="670.1" y2="380"/>
+<line class="minor" x1="686.2" y1="40" x2="686.2" y2="380"/>
+<line class="minor" x1="699.3" y1="40" x2="699.3" y2="380"/>
+<line class="minor" x1="710.4" y1="40" x2="710.4" y2="380"/>
+<line class="minor" x1="720.0" y1="40" x2="720.0" y2="380"/>
+<line class="minor" x1="728.4" y1="40" x2="728.4" y2="380"/>
+<line class="minor" x1="74" y1="359.5" x2="736" y2="359.5"/>
+<line class="minor" x1="74" y1="347.6" x2="736" y2="347.6"/>
+<line class="minor" x1="74" y1="339.1" x2="736" y2="339.1"/>
+<line class="minor" x1="74" y1="332.5" x2="736" y2="332.5"/>
+<line class="minor" x1="74" y1="327.1" x2="736" y2="327.1"/>
+<line class="minor" x1="74" y1="322.5" x2="736" y2="322.5"/>
+<line class="minor" x1="74" y1="318.6" x2="736" y2="318.6"/>
+<line class="minor" x1="74" y1="315.1" x2="736" y2="315.1"/>
+<line class="minor" x1="74" y1="291.5" x2="736" y2="291.5"/>
+<line class="minor" x1="74" y1="279.6" x2="736" y2="279.6"/>
+<line class="minor" x1="74" y1="271.1" x2="736" y2="271.1"/>
+<line class="minor" x1="74" y1="264.5" x2="736" y2="264.5"/>
+<line class="minor" x1="74" y1="259.1" x2="736" y2="259.1"/>
+<line class="minor" x1="74" y1="254.5" x2="736" y2="254.5"/>
+<line class="minor" x1="74" y1="250.6" x2="736" y2="250.6"/>
+<line class="minor" x1="74" y1="247.1" x2="736" y2="247.1"/>
+<line class="minor" x1="74" y1="223.5" x2="736" y2="223.5"/>
+<line class="minor" x1="74" y1="211.6" x2="736" y2="211.6"/>
+<line class="minor" x1="74" y1="203.1" x2="736" y2="203.1"/>
+<line class="minor" x1="74" y1="196.5" x2="736" y2="196.5"/>
+<line class="minor" x1="74" y1="191.1" x2="736" y2="191.1"/>
+<line class="minor" x1="74" y1="186.5" x2="736" y2="186.5"/>
+<line class="minor" x1="74" y1="182.6" x2="736" y2="182.6"/>
+<line class="minor" x1="74" y1="179.1" x2="736" y2="179.1"/>
+<line class="minor" x1="74" y1="155.5" x2="736" y2="155.5"/>
+<line class="minor" x1="74" y1="143.6" x2="736" y2="143.6"/>
+<line class="minor" x1="74" y1="135.1" x2="736" y2="135.1"/>
+<line class="minor" x1="74" y1="128.5" x2="736" y2="128.5"/>
+<line class="minor" x1="74" y1="123.1" x2="736" y2="123.1"/>
+<line class="minor" x1="74" y1="118.5" x2="736" y2="118.5"/>
+<line class="minor" x1="74" y1="114.6" x2="736" y2="114.6"/>
+<line class="minor" x1="74" y1="111.1" x2="736" y2="111.1"/>
+<line class="minor" x1="74" y1="87.5" x2="736" y2="87.5"/>
+<line class="minor" x1="74" y1="75.6" x2="736" y2="75.6"/>
+<line class="minor" x1="74" y1="67.1" x2="736" y2="67.1"/>
+<line class="minor" x1="74" y1="60.5" x2="736" y2="60.5"/>
+<line class="minor" x1="74" y1="55.1" x2="736" y2="55.1"/>
+<line class="minor" x1="74" y1="50.5" x2="736" y2="50.5"/>
+<line class="minor" x1="74" y1="46.6" x2="736" y2="46.6"/>
+<line class="minor" x1="74" y1="43.1" x2="736" y2="43.1"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="239.5" y1="40" x2="239.5" y2="380"/>
+<text class="txt" x="239.5" y="398" text-anchor="middle">1k</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10k</text>
+<line class="grid" x1="570.5" y1="40" x2="570.5" y2="380"/>
+<text class="txt" x="570.5" y="398" text-anchor="middle">100k</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">1M</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">100 µs</text>
+<line class="grid" x1="74" y1="312.0" x2="736" y2="312.0"/>
+<text class="txt" x="66" y="316.0" text-anchor="end">1 ms</text>
+<line class="grid" x1="74" y1="244.0" x2="736" y2="244.0"/>
+<text class="txt" x="66" y="248.0" text-anchor="end">10 ms</text>
+<line class="grid" x1="74" y1="176.0" x2="736" y2="176.0"/>
+<text class="txt" x="66" y="180.0" text-anchor="end">100 ms</text>
+<line class="grid" x1="74" y1="108.0" x2="736" y2="108.0"/>
+<text class="txt" x="66" y="112.0" text-anchor="end">1 s</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">10 s</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">nodes in the fabric</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">seconds (lower is better)</text>
+<polyline points="152.0,317.7 245.6,307.7 343.6,272.4 442.8,247.5 492.6,230.4 542.4,203.6 592.2,180.7" fill="none" stroke="#0a3d91" stroke-width="2"/>
+<rect x="148.0" y="313.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="241.6" y="303.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="339.6" y="268.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="438.8" y="243.5" width="8" height="8" fill="#0a3d91"/>
+<rect x="488.6" y="226.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="538.4" y="199.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="588.2" y="176.7" width="8" height="8" fill="#0a3d91"/>
+<polyline points="152.0,319.2 245.6,298.2 343.6,273.4 442.8,234.3 492.6,208.2 542.4,176.5 592.2,143.6" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="152.0" cy="319.2" r="4" fill="#1f6feb"/>
+<circle cx="245.6" cy="298.2" r="4" fill="#1f6feb"/>
+<circle cx="343.6" cy="273.4" r="4" fill="#1f6feb"/>
+<circle cx="442.8" cy="234.3" r="4" fill="#1f6feb"/>
+<circle cx="492.6" cy="208.2" r="4" fill="#1f6feb"/>
+<circle cx="542.4" cy="176.5" r="4" fill="#1f6feb"/>
+<circle cx="592.2" cy="143.6" r="4" fill="#1f6feb"/>
+<polyline points="152.0,229.6 245.6,220.5 343.6,200.0 442.8,167.0 492.6,147.0 542.4,127.5 592.2,107.9" fill="none" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="152.0,224.6 147.0,233.6 157.0,233.6" fill="#d9822b"/>
+<polygon points="245.6,215.5 240.6,224.5 250.6,224.5" fill="#d9822b"/>
+<polygon points="343.6,195.0 338.6,204.0 348.6,204.0" fill="#d9822b"/>
+<polygon points="442.8,162.0 437.8,171.0 447.8,171.0" fill="#d9822b"/>
+<polygon points="492.6,142.0 487.6,151.0 497.6,151.0" fill="#d9822b"/>
+<polygon points="542.4,122.5 537.4,131.5 547.4,131.5" fill="#d9822b"/>
+<polygon points="592.2,102.9 587.2,111.9 597.2,111.9" fill="#d9822b"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#0a3d91" stroke-width="2"/>
+<rect x="83.0" y="442.0" width="8" height="8" fill="#0a3d91"/>
+<text class="txt" x="108.0" y="450">ibnetlens, all cores</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="418.0" cy="446.0" r="4" fill="#1f6feb"/>
+<text class="txt" x="439.0" y="450">ibnetlens, 1 thread</text>
+<line x1="74.0" y1="464" x2="100.0" y2="464" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="87.0,459.0 82.0,468.0 92.0,468.0" fill="#d9822b"/>
+<text class="txt" x="108.0" y="468">Python regex parser</text>
+<text class="txt" x="74" y="496" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 486" role="img" aria-label="Slurm topology.conf generation: time vs fabric size">
+<text class="title" x="74" y="22">Slurm topology.conf generation: time vs fabric size</text>
+<line class="minor" x1="123.8" y1="40" x2="123.8" y2="380"/>
+<line class="minor" x1="153.0" y1="40" x2="153.0" y2="380"/>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="189.7" y1="40" x2="189.7" y2="380"/>
+<line class="minor" x1="202.8" y1="40" x2="202.8" y2="380"/>
+<line class="minor" x1="213.9" y1="40" x2="213.9" y2="380"/>
+<line class="minor" x1="223.5" y1="40" x2="223.5" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="289.3" y1="40" x2="289.3" y2="380"/>
+<line class="minor" x1="318.5" y1="40" x2="318.5" y2="380"/>
+<line class="minor" x1="339.1" y1="40" x2="339.1" y2="380"/>
+<line class="minor" x1="355.2" y1="40" x2="355.2" y2="380"/>
+<line class="minor" x1="368.3" y1="40" x2="368.3" y2="380"/>
+<line class="minor" x1="379.4" y1="40" x2="379.4" y2="380"/>
+<line class="minor" x1="389.0" y1="40" x2="389.0" y2="380"/>
+<line class="minor" x1="397.4" y1="40" x2="397.4" y2="380"/>
+<line class="minor" x1="454.8" y1="40" x2="454.8" y2="380"/>
+<line class="minor" x1="484.0" y1="40" x2="484.0" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="520.7" y1="40" x2="520.7" y2="380"/>
+<line class="minor" x1="533.8" y1="40" x2="533.8" y2="380"/>
+<line class="minor" x1="544.9" y1="40" x2="544.9" y2="380"/>
+<line class="minor" x1="554.5" y1="40" x2="554.5" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="620.3" y1="40" x2="620.3" y2="380"/>
+<line class="minor" x1="649.5" y1="40" x2="649.5" y2="380"/>
+<line class="minor" x1="670.1" y1="40" x2="670.1" y2="380"/>
+<line class="minor" x1="686.2" y1="40" x2="686.2" y2="380"/>
+<line class="minor" x1="699.3" y1="40" x2="699.3" y2="380"/>
+<line class="minor" x1="710.4" y1="40" x2="710.4" y2="380"/>
+<line class="minor" x1="720.0" y1="40" x2="720.0" y2="380"/>
+<line class="minor" x1="728.4" y1="40" x2="728.4" y2="380"/>
+<line class="minor" x1="74" y1="359.5" x2="736" y2="359.5"/>
+<line class="minor" x1="74" y1="347.6" x2="736" y2="347.6"/>
+<line class="minor" x1="74" y1="339.1" x2="736" y2="339.1"/>
+<line class="minor" x1="74" y1="332.5" x2="736" y2="332.5"/>
+<line class="minor" x1="74" y1="327.1" x2="736" y2="327.1"/>
+<line class="minor" x1="74" y1="322.5" x2="736" y2="322.5"/>
+<line class="minor" x1="74" y1="318.6" x2="736" y2="318.6"/>
+<line class="minor" x1="74" y1="315.1" x2="736" y2="315.1"/>
+<line class="minor" x1="74" y1="291.5" x2="736" y2="291.5"/>
+<line class="minor" x1="74" y1="279.6" x2="736" y2="279.6"/>
+<line class="minor" x1="74" y1="271.1" x2="736" y2="271.1"/>
+<line class="minor" x1="74" y1="264.5" x2="736" y2="264.5"/>
+<line class="minor" x1="74" y1="259.1" x2="736" y2="259.1"/>
+<line class="minor" x1="74" y1="254.5" x2="736" y2="254.5"/>
+<line class="minor" x1="74" y1="250.6" x2="736" y2="250.6"/>
+<line class="minor" x1="74" y1="247.1" x2="736" y2="247.1"/>
+<line class="minor" x1="74" y1="223.5" x2="736" y2="223.5"/>
+<line class="minor" x1="74" y1="211.6" x2="736" y2="211.6"/>
+<line class="minor" x1="74" y1="203.1" x2="736" y2="203.1"/>
+<line class="minor" x1="74" y1="196.5" x2="736" y2="196.5"/>
+<line class="minor" x1="74" y1="191.1" x2="736" y2="191.1"/>
+<line class="minor" x1="74" y1="186.5" x2="736" y2="186.5"/>
+<line class="minor" x1="74" y1="182.6" x2="736" y2="182.6"/>
+<line class="minor" x1="74" y1="179.1" x2="736" y2="179.1"/>
+<line class="minor" x1="74" y1="155.5" x2="736" y2="155.5"/>
+<line class="minor" x1="74" y1="143.6" x2="736" y2="143.6"/>
+<line class="minor" x1="74" y1="135.1" x2="736" y2="135.1"/>
+<line class="minor" x1="74" y1="128.5" x2="736" y2="128.5"/>
+<line class="minor" x1="74" y1="123.1" x2="736" y2="123.1"/>
+<line class="minor" x1="74" y1="118.5" x2="736" y2="118.5"/>
+<line class="minor" x1="74" y1="114.6" x2="736" y2="114.6"/>
+<line class="minor" x1="74" y1="111.1" x2="736" y2="111.1"/>
+<line class="minor" x1="74" y1="87.5" x2="736" y2="87.5"/>
+<line class="minor" x1="74" y1="75.6" x2="736" y2="75.6"/>
+<line class="minor" x1="74" y1="67.1" x2="736" y2="67.1"/>
+<line class="minor" x1="74" y1="60.5" x2="736" y2="60.5"/>
+<line class="minor" x1="74" y1="55.1" x2="736" y2="55.1"/>
+<line class="minor" x1="74" y1="50.5" x2="736" y2="50.5"/>
+<line class="minor" x1="74" y1="46.6" x2="736" y2="46.6"/>
+<line class="minor" x1="74" y1="43.1" x2="736" y2="43.1"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="239.5" y1="40" x2="239.5" y2="380"/>
+<text class="txt" x="239.5" y="398" text-anchor="middle">1k</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10k</text>
+<line class="grid" x1="570.5" y1="40" x2="570.5" y2="380"/>
+<text class="txt" x="570.5" y="398" text-anchor="middle">100k</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">1M</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">100 µs</text>
+<line class="grid" x1="74" y1="312.0" x2="736" y2="312.0"/>
+<text class="txt" x="66" y="316.0" text-anchor="end">1 ms</text>
+<line class="grid" x1="74" y1="244.0" x2="736" y2="244.0"/>
+<text class="txt" x="66" y="248.0" text-anchor="end">10 ms</text>
+<line class="grid" x1="74" y1="176.0" x2="736" y2="176.0"/>
+<text class="txt" x="66" y="180.0" text-anchor="end">100 ms</text>
+<line class="grid" x1="74" y1="108.0" x2="736" y2="108.0"/>
+<text class="txt" x="66" y="112.0" text-anchor="end">1 s</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">10 s</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">nodes in the fabric</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">seconds (lower is better)</text>
+<polyline points="152.0,318.6 245.6,290.4 343.6,270.6 442.8,236.4 492.6,214.3 542.4,194.9 592.2,173.4" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="152.0" cy="318.6" r="4" fill="#1f6feb"/>
+<circle cx="245.6" cy="290.4" r="4" fill="#1f6feb"/>
+<circle cx="343.6" cy="270.6" r="4" fill="#1f6feb"/>
+<circle cx="442.8" cy="236.4" r="4" fill="#1f6feb"/>
+<circle cx="492.6" cy="214.3" r="4" fill="#1f6feb"/>
+<circle cx="542.4" cy="194.9" r="4" fill="#1f6feb"/>
+<circle cx="592.2" cy="173.4" r="4" fill="#1f6feb"/>
+<polyline points="152.0,190.9 245.6,188.0 343.6,169.0 442.8,139.8 492.6,120.7 542.4,100.6 592.2,79.5" fill="none" stroke="#b3261e" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="152.0,185.9 157.0,190.9 152.0,195.9 147.0,190.9" fill="#b3261e"/>
+<polygon points="245.6,183.0 250.6,188.0 245.6,193.0 240.6,188.0" fill="#b3261e"/>
+<polygon points="343.6,164.0 348.6,169.0 343.6,174.0 338.6,169.0" fill="#b3261e"/>
+<polygon points="442.8,134.8 447.8,139.8 442.8,144.8 437.8,139.8" fill="#b3261e"/>
+<polygon points="492.6,115.7 497.6,120.7 492.6,125.7 487.6,120.7" fill="#b3261e"/>
+<polygon points="542.4,95.6 547.4,100.6 542.4,105.6 537.4,100.6" fill="#b3261e"/>
+<polygon points="592.2,74.5 597.2,79.5 592.2,84.5 587.2,79.5" fill="#b3261e"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="87.0" cy="446.0" r="4" fill="#1f6feb"/>
+<text class="txt" x="108.0" y="450">ibnetlens -F slurm</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#b3261e" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="418.0,441.0 423.0,446.0 418.0,451.0 413.0,446.0" fill="#b3261e"/>
+<text class="txt" x="439.0" y="450">ibtopology (Python)</text>
+<text class="txt" x="74" y="478" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 504" role="img" aria-label="Peak memory vs fabric size">
+<text class="title" x="74" y="22">Peak memory vs fabric size</text>
+<line class="minor" x1="123.8" y1="40" x2="123.8" y2="380"/>
+<line class="minor" x1="153.0" y1="40" x2="153.0" y2="380"/>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="189.7" y1="40" x2="189.7" y2="380"/>
+<line class="minor" x1="202.8" y1="40" x2="202.8" y2="380"/>
+<line class="minor" x1="213.9" y1="40" x2="213.9" y2="380"/>
+<line class="minor" x1="223.5" y1="40" x2="223.5" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="289.3" y1="40" x2="289.3" y2="380"/>
+<line class="minor" x1="318.5" y1="40" x2="318.5" y2="380"/>
+<line class="minor" x1="339.1" y1="40" x2="339.1" y2="380"/>
+<line class="minor" x1="355.2" y1="40" x2="355.2" y2="380"/>
+<line class="minor" x1="368.3" y1="40" x2="368.3" y2="380"/>
+<line class="minor" x1="379.4" y1="40" x2="379.4" y2="380"/>
+<line class="minor" x1="389.0" y1="40" x2="389.0" y2="380"/>
+<line class="minor" x1="397.4" y1="40" x2="397.4" y2="380"/>
+<line class="minor" x1="454.8" y1="40" x2="454.8" y2="380"/>
+<line class="minor" x1="484.0" y1="40" x2="484.0" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="520.7" y1="40" x2="520.7" y2="380"/>
+<line class="minor" x1="533.8" y1="40" x2="533.8" y2="380"/>
+<line class="minor" x1="544.9" y1="40" x2="544.9" y2="380"/>
+<line class="minor" x1="554.5" y1="40" x2="554.5" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="620.3" y1="40" x2="620.3" y2="380"/>
+<line class="minor" x1="649.5" y1="40" x2="649.5" y2="380"/>
+<line class="minor" x1="670.1" y1="40" x2="670.1" y2="380"/>
+<line class="minor" x1="686.2" y1="40" x2="686.2" y2="380"/>
+<line class="minor" x1="699.3" y1="40" x2="699.3" y2="380"/>
+<line class="minor" x1="710.4" y1="40" x2="710.4" y2="380"/>
+<line class="minor" x1="720.0" y1="40" x2="720.0" y2="380"/>
+<line class="minor" x1="728.4" y1="40" x2="728.4" y2="380"/>
+<line class="minor" x1="74" y1="345.9" x2="736" y2="345.9"/>
+<line class="minor" x1="74" y1="325.9" x2="736" y2="325.9"/>
+<line class="minor" x1="74" y1="311.8" x2="736" y2="311.8"/>
+<line class="minor" x1="74" y1="300.8" x2="736" y2="300.8"/>
+<line class="minor" x1="74" y1="291.8" x2="736" y2="291.8"/>
+<line class="minor" x1="74" y1="284.2" x2="736" y2="284.2"/>
+<line class="minor" x1="74" y1="277.6" x2="736" y2="277.6"/>
+<line class="minor" x1="74" y1="271.9" x2="736" y2="271.9"/>
+<line class="minor" x1="74" y1="232.5" x2="736" y2="232.5"/>
+<line class="minor" x1="74" y1="212.6" x2="736" y2="212.6"/>
+<line class="minor" x1="74" y1="198.4" x2="736" y2="198.4"/>
+<line class="minor" x1="74" y1="187.5" x2="736" y2="187.5"/>
+<line class="minor" x1="74" y1="178.5" x2="736" y2="178.5"/>
+<line class="minor" x1="74" y1="170.9" x2="736" y2="170.9"/>
+<line class="minor" x1="74" y1="164.3" x2="736" y2="164.3"/>
+<line class="minor" x1="74" y1="158.5" x2="736" y2="158.5"/>
+<line class="minor" x1="74" y1="119.2" x2="736" y2="119.2"/>
+<line class="minor" x1="74" y1="99.3" x2="736" y2="99.3"/>
+<line class="minor" x1="74" y1="85.1" x2="736" y2="85.1"/>
+<line class="minor" x1="74" y1="74.1" x2="736" y2="74.1"/>
+<line class="minor" x1="74" y1="65.1" x2="736" y2="65.1"/>
+<line class="minor" x1="74" y1="57.6" x2="736" y2="57.6"/>
+<line class="minor" x1="74" y1="51.0" x2="736" y2="51.0"/>
+<line class="minor" x1="74" y1="45.2" x2="736" y2="45.2"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="239.5" y1="40" x2="239.5" y2="380"/>
+<text class="txt" x="239.5" y="398" text-anchor="middle">1k</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10k</text>
+<line class="grid" x1="570.5" y1="40" x2="570.5" y2="380"/>
+<text class="txt" x="570.5" y="398" text-anchor="middle">100k</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">1M</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">1 MB</text>
+<line class="grid" x1="74" y1="266.7" x2="736" y2="266.7"/>
+<text class="txt" x="66" y="270.7" text-anchor="end">10 MB</text>
+<line class="grid" x1="74" y1="153.3" x2="736" y2="153.3"/>
+<text class="txt" x="66" y="157.3" text-anchor="end">100 MB</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">1 GB</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">nodes in the fabric</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">peak RSS (lower is better)</text>
+<polyline points="152.0,350.8 245.6,341.6 343.6,307.4 442.8,245.6 492.6,212.0 542.4,178.7 592.2,144.4" fill="none" stroke="#0a3d91" stroke-width="2"/>
+<rect x="148.0" y="346.8" width="8" height="8" fill="#0a3d91"/>
+<rect x="241.6" y="337.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="339.6" y="303.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="438.8" y="241.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="488.6" y="208.0" width="8" height="8" fill="#0a3d91"/>
+<rect x="538.4" y="174.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="588.2" y="140.4" width="8" height="8" fill="#0a3d91"/>
+<polyline points="152.0,350.9 245.6,343.8 343.6,311.0 442.8,252.5 492.6,220.5 542.4,187.1 592.2,153.5" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="152.0" cy="350.9" r="4" fill="#1f6feb"/>
+<circle cx="245.6" cy="343.8" r="4" fill="#1f6feb"/>
+<circle cx="343.6" cy="311.0" r="4" fill="#1f6feb"/>
+<circle cx="442.8" cy="252.5" r="4" fill="#1f6feb"/>
+<circle cx="492.6" cy="220.5" r="4" fill="#1f6feb"/>
+<circle cx="542.4" cy="187.1" r="4" fill="#1f6feb"/>
+<circle cx="592.2" cy="153.5" r="4" fill="#1f6feb"/>
+<polyline points="152.0,261.1 245.6,258.7 343.6,246.3 442.8,216.2 492.6,191.9 542.4,163.6 592.2,132.5" fill="none" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="152.0,256.1 147.0,265.1 157.0,265.1" fill="#d9822b"/>
+<polygon points="245.6,253.7 240.6,262.7 250.6,262.7" fill="#d9822b"/>
+<polygon points="343.6,241.3 338.6,250.3 348.6,250.3" fill="#d9822b"/>
+<polygon points="442.8,211.2 437.8,220.2 447.8,220.2" fill="#d9822b"/>
+<polygon points="492.6,186.9 487.6,195.9 497.6,195.9" fill="#d9822b"/>
+<polygon points="542.4,158.6 537.4,167.6 547.4,167.6" fill="#d9822b"/>
+<polygon points="592.2,127.5 587.2,136.5 597.2,136.5" fill="#d9822b"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#0a3d91" stroke-width="2"/>
+<rect x="83.0" y="442.0" width="8" height="8" fill="#0a3d91"/>
+<text class="txt" x="108.0" y="450">ibnetlens, all cores</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="418.0" cy="446.0" r="4" fill="#1f6feb"/>
+<text class="txt" x="439.0" y="450">ibnetlens, 1 thread</text>
+<line x1="74.0" y1="464" x2="100.0" y2="464" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="87.0,459.0 82.0,468.0 92.0,468.0" fill="#d9822b"/>
+<text class="txt" x="108.0" y="468">Python regex parser</text>
+<text class="txt" x="74" y="496" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 486" role="img" aria-label="Thread scaling on the largest input">
+<text class="title" x="74" y="22">Thread scaling on the largest input</text>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="273.3" y1="40" x2="273.3" y2="380"/>
+<line class="minor" x1="305.4" y1="40" x2="305.4" y2="380"/>
+<line class="minor" x1="331.6" y1="40" x2="331.6" y2="380"/>
+<line class="minor" x1="353.7" y1="40" x2="353.7" y2="380"/>
+<line class="minor" x1="372.9" y1="40" x2="372.9" y2="380"/>
+<line class="minor" x1="389.9" y1="40" x2="389.9" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="604.3" y1="40" x2="604.3" y2="380"/>
+<line class="minor" x1="636.4" y1="40" x2="636.4" y2="380"/>
+<line class="minor" x1="662.6" y1="40" x2="662.6" y2="380"/>
+<line class="minor" x1="684.7" y1="40" x2="684.7" y2="380"/>
+<line class="minor" x1="703.9" y1="40" x2="703.9" y2="380"/>
+<line class="minor" x1="720.9" y1="40" x2="720.9" y2="380"/>
+<line class="minor" x1="74" y1="328.8" x2="736" y2="328.8"/>
+<line class="minor" x1="74" y1="298.9" x2="736" y2="298.9"/>
+<line class="minor" x1="74" y1="277.6" x2="736" y2="277.6"/>
+<line class="minor" x1="74" y1="261.2" x2="736" y2="261.2"/>
+<line class="minor" x1="74" y1="247.7" x2="736" y2="247.7"/>
+<line class="minor" x1="74" y1="236.3" x2="736" y2="236.3"/>
+<line class="minor" x1="74" y1="226.5" x2="736" y2="226.5"/>
+<line class="minor" x1="74" y1="217.8" x2="736" y2="217.8"/>
+<line class="minor" x1="74" y1="158.8" x2="736" y2="158.8"/>
+<line class="minor" x1="74" y1="128.9" x2="736" y2="128.9"/>
+<line class="minor" x1="74" y1="107.6" x2="736" y2="107.6"/>
+<line class="minor" x1="74" y1="91.2" x2="736" y2="91.2"/>
+<line class="minor" x1="74" y1="77.7" x2="736" y2="77.7"/>
+<line class="minor" x1="74" y1="66.3" x2="736" y2="66.3"/>
+<line class="minor" x1="74" y1="56.5" x2="736" y2="56.5"/>
+<line class="minor" x1="74" y1="47.8" x2="736" y2="47.8"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">1</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">10 ms</text>
+<line class="grid" x1="74" y1="210.0" x2="736" y2="210.0"/>
+<text class="txt" x="66" y="214.0" text-anchor="end">100 ms</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">1 s</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">threads (-j)</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">seconds (lower is better)</text>
+<polyline points="74.0,126.3 173.6,146.9 273.3,153.5 372.9,186.6 431.2,201.0 472.6,218.2 530.8,228.6" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<rect x="70.0" y="122.3" width="8" height="8" fill="#1f6feb"/>
+<rect x="169.6" y="142.9" width="8" height="8" fill="#1f6feb"/>
+<rect x="269.3" y="149.5" width="8" height="8" fill="#1f6feb"/>
+<rect x="368.9" y="182.6" width="8" height="8" fill="#1f6feb"/>
+<rect x="427.2" y="197.0" width="8" height="8" fill="#1f6feb"/>
+<rect x="468.6" y="214.2" width="8" height="8" fill="#1f6feb"/>
+<rect x="526.8" y="224.6" width="8" height="8" fill="#1f6feb"/>
+<polyline points="74.0,126.3 173.6,177.4 273.3,228.6 372.9,279.8 431.2,309.7 472.6,331.0 530.8,360.9" fill="none" stroke="#8c959f" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="74.0" cy="126.3" r="4" fill="#8c959f"/>
+<circle cx="173.6" cy="177.4" r="4" fill="#8c959f"/>
+<circle cx="273.3" cy="228.6" r="4" fill="#8c959f"/>
+<circle cx="372.9" cy="279.8" r="4" fill="#8c959f"/>
+<circle cx="431.2" cy="309.7" r="4" fill="#8c959f"/>
+<circle cx="472.6" cy="331.0" r="4" fill="#8c959f"/>
+<circle cx="530.8" cy="360.9" r="4" fill="#8c959f"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<rect x="83.0" y="442.0" width="8" height="8" fill="#1f6feb"/>
+<text class="txt" x="108.0" y="450">ibnetlens</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#8c959f" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="418.0" cy="446.0" r="4" fill="#8c959f"/>
+<text class="txt" x="439.0" y="450">ideal scaling</text>
+<text class="txt" x="74" y="478" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>
+<h2>Measurements — i9-12900K-ubuntu24</h2>
+<table><tr><th class="num">nodes</th><th class="num">size MB</th><th class="num">ibnetlens 1 thread</th><th class="num">ibnetlens all cores</th><th class="num">ibnetlens slurm</th><th class="num">ibnetlens check</th><th class="num">Python parser</th><th class="num">ibtopology</th></tr><tr><td class="num">296</td><td class="num">0.1</td><td class="num">784 µs</td><td class="num">824 µs</td><td class="num">799 µs</td><td class="num">734 µs</td><td class="num">16.3 ms</td><td class="num">60.5 ms</td></tr><tr><td class="num">1.088k</td><td class="num">0.4</td><td class="num">1.6 ms</td><td class="num">1.16 ms</td><td class="num">2.08 ms</td><td class="num">2.92 ms</td><td class="num">22.2 ms</td><td class="num">66.6 ms</td></tr><tr><td class="num">4.256k</td><td class="num">1.7</td><td class="num">3.69 ms</td><td class="num">3.83 ms</td><td class="num">4.07 ms</td><td class="num">4.19 ms</td><td class="num">44.4 ms</td><td class="num">127 ms</td></tr><tr><td class="num">16.928k</td><td class="num">6.7</td><td class="num">13.9 ms</td><td class="num">8.88 ms</td><td class="num">12.9 ms</td><td class="num">12.6 ms</td><td class="num">136 ms</td><td class="num">340 ms</td></tr><tr><td class="num">33.824k</td><td class="num">13.5</td><td class="num">33.6 ms</td><td class="num">15.9 ms</td><td class="num">27.4 ms</td><td class="num">19.5 ms</td><td class="num">267 ms</td><td class="num">650 ms</td></tr><tr><td class="num">67.616k</td><td class="num">27.3</td><td class="num">98.3 ms</td><td class="num">39.3 ms</td><td class="num">52.8 ms</td><td class="num">49.2 ms</td><td class="num">517 ms</td><td class="num">1.28 s</td></tr><tr><td class="num">135.2k</td><td class="num">55.0</td><td class="num">299 ms</td><td class="num">85.3 ms</td><td class="num">109 ms</td><td class="num">108 ms</td><td class="num">1 s</td><td class="num">2.63 s</td></tr></table>
+<p class="muted">Start-up on a tiny file: ibnetlens 612 µs, Python parser 16.2 ms.</p></body></html>

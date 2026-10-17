@@ -1,0 +1,15 @@
+{
+ "tag": "i9-12900K-ubuntu24",
+ "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+ "cpus": 24,
+ "memory_mb": 31795,
+ "os": "Ubuntu 24.04.5 LTS",
+ "kernel": "7.0.0-34-generic",
+ "arch": "x86_64",
+ "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+ "version": "ibnetlens 1.0.1",
+ "simd": "yes",
+ "gpu": "Intel Corporation AlderLake-S GT1 (rev 0c)",
+ "python": "3.12.3",
+ "date": "2026-10-17 23:35"
+}

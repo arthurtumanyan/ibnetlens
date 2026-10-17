@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 504" role="img" aria-label="Peak memory vs fabric size">
+<style>
+.bg{fill:#fff}.txt{fill:#24292f;font:12px system-ui,sans-serif}.title{fill:#24292f;font:600 14px system-ui,sans-serif}
+.axis{stroke:#57606a;fill:none}.grid{stroke:#d0d7de;stroke-width:1}.minor{stroke:#eaeef2;stroke-width:1}
+@media (prefers-color-scheme: dark){.bg{fill:#0d1117}.txt,.title{fill:#e6edf3}.axis{stroke:#8b949e}.grid{stroke:#30363d}.minor{stroke:#21262d}}
+</style>
+<rect class="bg" width="760" height="504"/>
+<text class="title" x="74" y="22">Peak memory vs fabric size</text>
+<line class="minor" x1="123.8" y1="40" x2="123.8" y2="380"/>
+<line class="minor" x1="153.0" y1="40" x2="153.0" y2="380"/>
+<line class="minor" x1="173.6" y1="40" x2="173.6" y2="380"/>
+<line class="minor" x1="189.7" y1="40" x2="189.7" y2="380"/>
+<line class="minor" x1="202.8" y1="40" x2="202.8" y2="380"/>
+<line class="minor" x1="213.9" y1="40" x2="213.9" y2="380"/>
+<line class="minor" x1="223.5" y1="40" x2="223.5" y2="380"/>
+<line class="minor" x1="231.9" y1="40" x2="231.9" y2="380"/>
+<line class="minor" x1="289.3" y1="40" x2="289.3" y2="380"/>
+<line class="minor" x1="318.5" y1="40" x2="318.5" y2="380"/>
+<line class="minor" x1="339.1" y1="40" x2="339.1" y2="380"/>
+<line class="minor" x1="355.2" y1="40" x2="355.2" y2="380"/>
+<line class="minor" x1="368.3" y1="40" x2="368.3" y2="380"/>
+<line class="minor" x1="379.4" y1="40" x2="379.4" y2="380"/>
+<line class="minor" x1="389.0" y1="40" x2="389.0" y2="380"/>
+<line class="minor" x1="397.4" y1="40" x2="397.4" y2="380"/>
+<line class="minor" x1="454.8" y1="40" x2="454.8" y2="380"/>
+<line class="minor" x1="484.0" y1="40" x2="484.0" y2="380"/>
+<line class="minor" x1="504.6" y1="40" x2="504.6" y2="380"/>
+<line class="minor" x1="520.7" y1="40" x2="520.7" y2="380"/>
+<line class="minor" x1="533.8" y1="40" x2="533.8" y2="380"/>
+<line class="minor" x1="544.9" y1="40" x2="544.9" y2="380"/>
+<line class="minor" x1="554.5" y1="40" x2="554.5" y2="380"/>
+<line class="minor" x1="562.9" y1="40" x2="562.9" y2="380"/>
+<line class="minor" x1="620.3" y1="40" x2="620.3" y2="380"/>
+<line class="minor" x1="649.5" y1="40" x2="649.5" y2="380"/>
+<line class="minor" x1="670.1" y1="40" x2="670.1" y2="380"/>
+<line class="minor" x1="686.2" y1="40" x2="686.2" y2="380"/>
+<line class="minor" x1="699.3" y1="40" x2="699.3" y2="380"/>
+<line class="minor" x1="710.4" y1="40" x2="710.4" y2="380"/>
+<line class="minor" x1="720.0" y1="40" x2="720.0" y2="380"/>
+<line class="minor" x1="728.4" y1="40" x2="728.4" y2="380"/>
+<line class="minor" x1="74" y1="345.9" x2="736" y2="345.9"/>
+<line class="minor" x1="74" y1="325.9" x2="736" y2="325.9"/>
+<line class="minor" x1="74" y1="311.8" x2="736" y2="311.8"/>
+<line class="minor" x1="74" y1="300.8" x2="736" y2="300.8"/>
+<line class="minor" x1="74" y1="291.8" x2="736" y2="291.8"/>
+<line class="minor" x1="74" y1="284.2" x2="736" y2="284.2"/>
+<line class="minor" x1="74" y1="277.6" x2="736" y2="277.6"/>
+<line class="minor" x1="74" y1="271.9" x2="736" y2="271.9"/>
+<line class="minor" x1="74" y1="232.5" x2="736" y2="232.5"/>
+<line class="minor" x1="74" y1="212.6" x2="736" y2="212.6"/>
+<line class="minor" x1="74" y1="198.4" x2="736" y2="198.4"/>
+<line class="minor" x1="74" y1="187.5" x2="736" y2="187.5"/>
+<line class="minor" x1="74" y1="178.5" x2="736" y2="178.5"/>
+<line class="minor" x1="74" y1="170.9" x2="736" y2="170.9"/>
+<line class="minor" x1="74" y1="164.3" x2="736" y2="164.3"/>
+<line class="minor" x1="74" y1="158.5" x2="736" y2="158.5"/>
+<line class="minor" x1="74" y1="119.2" x2="736" y2="119.2"/>
+<line class="minor" x1="74" y1="99.3" x2="736" y2="99.3"/>
+<line class="minor" x1="74" y1="85.1" x2="736" y2="85.1"/>
+<line class="minor" x1="74" y1="74.1" x2="736" y2="74.1"/>
+<line class="minor" x1="74" y1="65.1" x2="736" y2="65.1"/>
+<line class="minor" x1="74" y1="57.6" x2="736" y2="57.6"/>
+<line class="minor" x1="74" y1="51.0" x2="736" y2="51.0"/>
+<line class="minor" x1="74" y1="45.2" x2="736" y2="45.2"/>
+<line class="grid" x1="74.0" y1="40" x2="74.0" y2="380"/>
+<text class="txt" x="74.0" y="398" text-anchor="middle">100</text>
+<line class="grid" x1="239.5" y1="40" x2="239.5" y2="380"/>
+<text class="txt" x="239.5" y="398" text-anchor="middle">1k</text>
+<line class="grid" x1="405.0" y1="40" x2="405.0" y2="380"/>
+<text class="txt" x="405.0" y="398" text-anchor="middle">10k</text>
+<line class="grid" x1="570.5" y1="40" x2="570.5" y2="380"/>
+<text class="txt" x="570.5" y="398" text-anchor="middle">100k</text>
+<line class="grid" x1="736.0" y1="40" x2="736.0" y2="380"/>
+<text class="txt" x="736.0" y="398" text-anchor="middle">1M</text>
+<line class="grid" x1="74" y1="380.0" x2="736" y2="380.0"/>
+<text class="txt" x="66" y="384.0" text-anchor="end">1 MB</text>
+<line class="grid" x1="74" y1="266.7" x2="736" y2="266.7"/>
+<text class="txt" x="66" y="270.7" text-anchor="end">10 MB</text>
+<line class="grid" x1="74" y1="153.3" x2="736" y2="153.3"/>
+<text class="txt" x="66" y="157.3" text-anchor="end">100 MB</text>
+<line class="grid" x1="74" y1="40.0" x2="736" y2="40.0"/>
+<text class="txt" x="66" y="44.0" text-anchor="end">1 GB</text>
+<rect class="axis" x="74" y="40" width="662" height="340"/>
+<text class="txt" x="405.0" y="420" text-anchor="middle">nodes in the fabric</text>
+<text class="txt" transform="translate(16,210.0) rotate(-90)" text-anchor="middle">peak RSS (lower is better)</text>
+<polyline points="152.0,350.8 245.6,341.6 343.6,307.4 442.8,245.6 492.6,212.0 542.4,178.7 592.2,144.4" fill="none" stroke="#0a3d91" stroke-width="2"/>
+<rect x="148.0" y="346.8" width="8" height="8" fill="#0a3d91"/>
+<rect x="241.6" y="337.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="339.6" y="303.4" width="8" height="8" fill="#0a3d91"/>
+<rect x="438.8" y="241.6" width="8" height="8" fill="#0a3d91"/>
+<rect x="488.6" y="208.0" width="8" height="8" fill="#0a3d91"/>
+<rect x="538.4" y="174.7" width="8" height="8" fill="#0a3d91"/>
+<rect x="588.2" y="140.4" width="8" height="8" fill="#0a3d91"/>
+<polyline points="152.0,350.9 245.6,343.8 343.6,311.0 442.8,252.5 492.6,220.5 542.4,187.1 592.2,153.5" fill="none" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="152.0" cy="350.9" r="4" fill="#1f6feb"/>
+<circle cx="245.6" cy="343.8" r="4" fill="#1f6feb"/>
+<circle cx="343.6" cy="311.0" r="4" fill="#1f6feb"/>
+<circle cx="442.8" cy="252.5" r="4" fill="#1f6feb"/>
+<circle cx="492.6" cy="220.5" r="4" fill="#1f6feb"/>
+<circle cx="542.4" cy="187.1" r="4" fill="#1f6feb"/>
+<circle cx="592.2" cy="153.5" r="4" fill="#1f6feb"/>
+<polyline points="152.0,261.1 245.6,258.7 343.6,246.3 442.8,216.2 492.6,191.9 542.4,163.6 592.2,132.5" fill="none" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="152.0,256.1 147.0,265.1 157.0,265.1" fill="#d9822b"/>
+<polygon points="245.6,253.7 240.6,262.7 250.6,262.7" fill="#d9822b"/>
+<polygon points="343.6,241.3 338.6,250.3 348.6,250.3" fill="#d9822b"/>
+<polygon points="442.8,211.2 437.8,220.2 447.8,220.2" fill="#d9822b"/>
+<polygon points="492.6,186.9 487.6,195.9 497.6,195.9" fill="#d9822b"/>
+<polygon points="542.4,158.6 537.4,167.6 547.4,167.6" fill="#d9822b"/>
+<polygon points="592.2,127.5 587.2,136.5 597.2,136.5" fill="#d9822b"/>
+<line x1="74.0" y1="446" x2="100.0" y2="446" stroke="#0a3d91" stroke-width="2"/>
+<rect x="83.0" y="442.0" width="8" height="8" fill="#0a3d91"/>
+<text class="txt" x="108.0" y="450">ibnetlens, all cores</text>
+<line x1="405.0" y1="446" x2="431.0" y2="446" stroke="#1f6feb" stroke-width="2"/>
+<circle cx="418.0" cy="446.0" r="4" fill="#1f6feb"/>
+<text class="txt" x="439.0" y="450">ibnetlens, 1 thread</text>
+<line x1="74.0" y1="464" x2="100.0" y2="464" stroke="#d9822b" stroke-width="2" stroke-dasharray="6 4"/>
+<polygon points="87.0,459.0 82.0,468.0 92.0,468.0" fill="#d9822b"/>
+<text class="txt" x="108.0" y="468">Python regex parser</text>
+<text class="txt" x="74" y="496" font-size="10" opacity="0.7">generated two-level fat-trees, 32 hosts per leaf</text>
+</svg>

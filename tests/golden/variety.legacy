@@ -1,0 +1,30 @@
+Switch:
+sysimgguid: 0x2c90300000100
+switch_id: : 0x2c90300000100(2c90300000100)
+	Connected to switch: switchguid=0x2c90300000200(2c90300000200), port=1
+	Connected to switch: switchguid=0x2c90300000200(2c90300000200), port=2
+	Connected to host: caguid=0x2c90300001001, port=1
+	Connected to host: caguid=0x2c90300001003, port=1
+	Connected to host: caguid=0x2c90300003001, port=1
+
+Switch:
+sysimgguid: 0x2c90300000200
+switch_id: : 0x2c90300000200(2c90300000200)
+	Connected to switch: switchguid=0x2c90300000100(2c90300000100), port=1
+	Connected to switch: switchguid=0x2c90300000100(2c90300000100), port=2
+
+Host:
+sysimgguid: 0x2c90300001000
+port_id: : 0x2c90300001001
+	Connected to switch: switchguid=0x2c90300000100(2c90300000100), port=3
+
+Host:
+sysimgguid: 0x2c90300001000
+port_id: : 0x2c90300001003
+	Connected to switch: switchguid=0x2c90300000100(2c90300000100), port=4
+
+Host:
+sysimgguid: 0x2c90300003000
+port_id: : 0x2c90300003001
+	Connected to switch: switchguid=0x2c90300000100(2c90300000100), port=5
+

@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+ibnetlens --version
+d=$(mktemp -d)
+trap 'rm -rf "$d"' EXIT
+cat > "$d/a.topo" <<'TOPO'
+vendid=0x2c9
+devid=0xd2f0
+sysimgguid=0x10
+switchguid=0x10(10)
+Switch	1 "S-0000000000000010"		# "sw" base port 0 lid 1 lmc 0
+[1]	"H-0000000000000020"[1](21) 		# "host1 HCA-1" lid 2 4xEDR
+
+vendid=0x2c9
+devid=0x1017
+sysimgguid=0x20
+caguid=0x20
+Ca	1 "H-0000000000000020"		# "host1 HCA-1"
+[1](21) 	"S-0000000000000010"[1]		# lid 2 lmc 0 "sw" lid 1 4xEDR
+TOPO
+ibnetlens check "$d/a.topo"
+ibnetlens -F slurm "$d/a.topo" | grep -q 'Nodes=host1'
