@@ -77,18 +77,18 @@ flowchart LR
 pointers between records: everything refers to everything else by `uint32_t` index, which keeps records small,
 makes merging chunks a `memcpy` plus index rebasing, and avoids pointer chasing in the hot loops.
 
-- `nodes[]` — `ib_node`: GUID, sysimg GUID, switch port-0 GUID, kind (`IB_CA`, `IB_SWITCH`, `IB_ROUTER`),
+- `nodes[]` - `ib_node`: GUID, sysimg GUID, switch port-0 GUID, kind (`IB_CA`, `IB_SWITCH`, `IB_ROUTER`),
   vendor/device id, LID/LMC (switches and routers; adapter LIDs are per port), declared port count, and
   `first_port`/`nports`, the node's range in `ports[]`.
-- `ports[]` — `ib_port`: only connected ports appear, in file order, contiguous per node. Each holds the local
+- `ports[]` - `ib_port`: only connected ports appear, in file order, contiguous per node. Each holds the local
   port number and GUID, the remote node GUID/port/port GUID, LIDs, speed and width, and the resolved
   `peer_node` and `peer_idx` (index of the reverse port), both `IBT_NONE` while unresolved or when the
   remote end is missing.
-- String pool — one `char` array; offset 0 is the empty string. Node descriptions and ibsim-style node IDs
+- String pool - one `char` array; offset 0 is the empty string. Node descriptions and ibsim-style node IDs
   live here. Only descriptions of nodes are stored; the peer descriptions that appear on link lines are
   derived from the peer node when needed (the `ibnd` writer does this), which saves memory.
-- `map` — `ibt_guidmap` from node GUID to node index; `names` — table of node indices keyed by ibsim ID.
-- `dups[]` — pairs of node indices that share a GUID, reported by `check`.
+- `map` - `ibt_guidmap` from node GUID to node index; `names` - table of node indices keyed by ibsim ID.
+- `dups[]` - pairs of node indices that share a GUID, reported by `check`.
 
 `IBT_NONE` (`UINT32_MAX`) is the "no index" value everywhere; node and port counts are limited to
 `IBT_NONE - 2`.
@@ -197,7 +197,7 @@ Each writer takes a resolved `const ib_fabric *` and a `FILE *`. They are in `ou
 - `csv` is links, `csv-nodes` is nodes; descriptions are quoted.
 - `dot` emits each link once (`peer_idx` greater than own index is skipped).
 - `ibnd` reproduces the ibnetdiscover layout, including the exact tab/space pattern, so that
-  parse → write → parse is the identity (tested). ibsim reads this format.
+  parse -> write -> parse is the identity (tested). ibsim reads this format.
 - `legacy` keeps the byte layout of the original topo_parser report for compatibility.
 - `slurm` (out_slurm.c): a switch with at least as many hosts as links to other switches is a leaf; levels are
   breadth-first distances from the leaves; a spine that also has hosts gets a synthetic leaf named

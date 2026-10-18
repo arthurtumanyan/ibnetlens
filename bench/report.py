@@ -187,7 +187,7 @@ def build_series(runs, tools, key_x, value_ok=lambda v: v is not None):
         color = PALETTE[ri % len(PALETTE)]
         for key, label, dash, shape in tools:
             pts = [(r[key_x], r[key]) for r in run["bench"]["scaling"] if r.get(key) is not None]
-            name = label if len(runs) == 1 else "%s — %s" % (label, run["label"])
+            name = label if len(runs) == 1 else "%s - %s" % (label, run["label"])
             if len(runs) == 1:
                 color = {"square": "#0a3d91", "circle": "#1f6feb", "triangle": "#d9822b", "diamond": "#b3261e"}[shape]
             series.append({"label": name, "color": color, "dash": dash, "shape": shape, "points": pts})
@@ -214,10 +214,10 @@ def charts(runs, standalone=False):
         if not pts:
             continue
         color = PALETTE[ri % len(PALETTE)]
-        thr.append({"label": "ibnetlens" if len(runs) == 1 else "ibnetlens — " + run["label"], "color": color, "dash": "",
+        thr.append({"label": "ibnetlens" if len(runs) == 1 else "ibnetlens - " + run["label"], "color": color, "dash": "",
                     "shape": "square", "points": pts})
         base = min(pts)[1]
-        thr.append({"label": "ideal scaling" if len(runs) == 1 else "ideal — " + run["label"], "color": "#8c959f",
+        thr.append({"label": "ideal scaling" if len(runs) == 1 else "ideal - " + run["label"], "color": "#8c959f",
                     "dash": "2 4", "shape": "circle", "points": [(x, base / x) for x, _ in pts]})
     out["threads"] = line_chart("Thread scaling on the largest input", thr, "threads (-j)", "seconds (lower is better)",
                                 fmt_plain, fmt_seconds, standalone=standalone, note=note)
@@ -255,7 +255,7 @@ def tests_section(run):
     if not t:
         return ""
     s = t["summary"]
-    parts = ['<h2>Tests — %s</h2>' % html.escape(run["label"])]
+    parts = ['<h2>Tests - %s</h2>' % html.escape(run["label"])]
     parts.append('<div class="card"><span class="ok">%d passed</span> · <span class="FAIL">%d failed</span> · '
                  '<span class="skip">%d skipped</span> <span class="muted">in %.1f s</span></div>' % (
                      s["ok"], s["fail"], s["skip"], t.get("seconds", 0)))
@@ -279,7 +279,7 @@ def bench_tables(runs):
         b = run["bench"]
         if not b:
             continue
-        parts.append("<h2>Measurements — %s</h2>" % html.escape(run["label"]))
+        parts.append("<h2>Measurements - %s</h2>" % html.escape(run["label"]))
         head = ["nodes", "size MB", "ibnetlens 1 thread", "ibnetlens all cores", "ibnetlens slurm", "ibnetlens check", "Python parser"]
         has_k = any(r.get("ibtopology_s") is not None for r in b["scaling"])
         if has_k:
@@ -288,7 +288,7 @@ def bench_tables(runs):
         for r in b["scaling"]:
             cells = [fmt_count(r["nodes"]), "%.1f" % r["size_mb"]]
             for k in ("ibnetlens_j1_s", "ibnetlens_auto_s", "ibnetlens_slurm_s", "ibnetlens_check_s", "python_s") + (("ibtopology_s",) if has_k else ()):
-                cells.append("—" if r.get(k) is None else fmt_seconds(r[k]))
+                cells.append("-" if r.get(k) is None else fmt_seconds(r[k]))
             rows.append("<tr>%s</tr>" % "".join('<td class="num">%s</td>' % c for c in cells))
         parts.append("<table>%s</table>" % "".join(rows))
         st = b.get("startup") or {}

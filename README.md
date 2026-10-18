@@ -247,6 +247,17 @@ bench/fetch-analogs.sh                                     # optional: download 
 python3 bench/audit.py FILE.topo ...                       # reachability audit
 ```
 
+## Install
+
+Fedora (x86_64, aarch64) from COPR; the repository is signed by COPR:
+
+```
+sudo dnf copr enable atumanyan/ibnetlens
+sudo dnf install ibnetlens
+```
+
+The COPR install was tested on Fedora 44 x86_64. Debian and Ubuntu packages are attached to the GitHub releases.
+
 ## Packages
 
 ```
@@ -277,9 +288,9 @@ masked if needed. There is no support guarantee.
 
 ## Documentation
 
-- `docs/DEVELOPER.md` — architecture, data model, grammar, threading, how to extend
-- `docs/TESTING.md` — running the tests on any machine, reports, comparing machines
-- `docs/PACKAGING.md` — deb and rpm builds, container tests, release checklist
+- `docs/DEVELOPER.md` - architecture, data model, grammar, threading, how to extend
+- `docs/TESTING.md` - running the tests on any machine, reports, comparing machines
+- `docs/PACKAGING.md` - deb and rpm builds, container tests, release checklist
 - `man ibnetlens`
 
 ## Build
